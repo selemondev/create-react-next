@@ -1,0 +1,55 @@
+{
+  "name": "create-react-next",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.14.0",
+  "description": "The Next Generation React Scaffolding Tool ✨",
+  "author": "Selemondev",
+  "license": "MIT",
+  "homepage": "https://github.com/selemondev/create-react-next#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selemondev/create-react-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/create-react-next/issues"
+  },
+  "keywords": [
+    "react",
+    "cli",
+    "create-react-next",
+    "typescript",
+    "node"
+  ],
+  "exports": "./dist/index.js",
+  "main": "index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "create-react-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "esno src/index.ts",
+    "generate:release": "npx changelogen@latest --release",
+    "build": "tsup src/index.ts --format esm --clean --dts --sourcemap --minify --metafile",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
+    "@antfu/ni": "^0.21.12",
+    "@types/node": "^20.11.19",
+    "eslint": "^8.56.0",
+    "esno": "^4.0.0",
+    "lint-staged": "^15.2.2",
+    "simple-git-hooks": "^2.9.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
