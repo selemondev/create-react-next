@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
 import program from './core/program'
-import createVueNext from './core/command/create-vue-next';
+import createReactNext from './core/command/create-react-next';
 import packageJson from "../package.json"
-import options from './core/utils/vue/options';
+import options from './core/utils/react/options';
 
 async function main() {
       program
             .arguments('<project-name>')
             .version(packageJson.version)
-            .description(`Create Vue Next. The Next Generation Vue Scaffolding Tool ⚡`)
+            .description(`Create React Next. The Next Generation React Scaffolding Tool ⚡`)
             .action((name: string) => {
                   options.name = name.trim();
             })
@@ -68,7 +68,7 @@ async function main() {
             options.useTailwind = program.opts().tailwind;
             options.useEslint = program.opts().eslint;
             options.package = !!program.opts().useNpm ? 'npm' : !!program.opts().usePnpm ? 'pnpm' : !!program.opts().useYarn ? 'yarn' : !!program.opts().useBun ? 'bun' : options.package;
-            await createVueNext();
+            await createReactNext();
 
 }
 main();
