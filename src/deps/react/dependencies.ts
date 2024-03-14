@@ -12,6 +12,20 @@ const redux = {
     env: 'pro'
 }
 
+const zustand = {
+    name: 'zustand',
+    version: '^4.5.2',
+    stableVersion: '^4.5.2',
+    env: 'pro'
+}
+
+const recoil = {
+    name: 'recoil',
+    version: '^0.7.7',
+    stableVersion: '^0.7.7',
+    env: 'pro'
+}
+
 const eslintJs = {
     name: ['eslint', 'eslint-plugin-react', 'eslint-plugin-react-hooks', 'eslint-plugin-react-refresh'],
     version: ["^8.57.0", "^7.34.0", "^4.6.0", "^0.4.5"],
@@ -105,8 +119,10 @@ export {
     javascript,
     typescript,
     vitest,
+    zustand,
     tanStackReactQuery,
     eslintJs,
+    recoil,
     reactHooks,
     redux,
     router
