@@ -2,7 +2,7 @@ import ejs from "ejs";
 import fs from 'fs-extra'
 import path from "path";
 import prettier from "prettier"
-import options from '../core/utils/vue/options'
+import options from '../core/utils/react/options'
 import { fileURLToPath } from "node:url";
 import { dirname } from "path";
 
@@ -14,7 +14,7 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
         const __dirname = dirname(__filename);
         let prettierCode: string = '';
 
-        const language = options.useTypeScript ? 'vue-ts' : 'vue-js';
+        const language = options.useTypeScript ? 'react-ts' : 'react-js';
 
         const templatePath = path.resolve(__dirname, `../template/${language}`)
 
