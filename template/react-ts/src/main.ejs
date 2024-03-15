@@ -1,0 +1,34 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+<% if (stateManagement==='redux' ) { -%>
+import { store } from './app/store'
+import { Provider } from 'react-redux'
+<% } -%>
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+      <App />
+   </React.StrictMode>,
+)
+
+<% if (stateManagement === 'none') { -%>
+  ReactDOM.createRoot(document.getElementById('root')!).render(
+    <React.StrictMode>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </React.StrictMode>,
+  )
+<% } -%>
+
+<% if (stateManagement==='redux' ) { -%>
+    ReactDOM.createRoot(document.getElementById('root')!).render(
+      <React.StrictMode>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </React.StrictMode>,
+    )
+ <% } -%>

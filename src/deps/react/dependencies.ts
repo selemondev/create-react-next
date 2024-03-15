@@ -19,10 +19,10 @@ const zustand = {
     env: 'pro'
 }
 
-const recoil = {
-    name: 'recoil',
-    version: '^0.7.7',
-    stableVersion: '^0.7.7',
+const jotai = {
+    name: ['jotai', 'jotai-immer'],
+    version: ['^2.7.1', '^0.3.0'],
+    stableVersion: ['^2.7.1', '^0.3.0'],
     env: 'pro'
 }
 
@@ -122,7 +122,7 @@ export {
     zustand,
     tanStackReactQuery,
     eslintJs,
-    recoil,
+    jotai,
     reactHooks,
     redux,
     router

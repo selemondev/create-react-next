@@ -9,6 +9,7 @@ import options from '../../utils/react/options'
 import tailwindPrompt from "./tailwind";
 import typeScriptPrompt from "./typescript";
 import eslintPrompt from "./eslint"
+import stateManagement from './stateManagement'
 async function createReactQuestions(): Promise<void> {
   try {
     if(!options.name) {
@@ -20,6 +21,7 @@ async function createReactQuestions(): Promise<void> {
     if(!options.useTailwind) {
       await createQuestion(tailwindPrompt)
     }
+    await createQuestion(stateManagement)
     await runPrompt();
     if(!options.useEslint) {
       await createQuestion(eslintPrompt)
