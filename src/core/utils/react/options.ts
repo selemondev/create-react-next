@@ -6,7 +6,7 @@ interface Options {
     JavaScript?: string
     UseHooks?: string
     Redux?: string
-    Recoil?: string
+    Jotai?: string
     Zustand?: string
     Eslint?: string
     Vitest?: string
@@ -18,7 +18,7 @@ interface Options {
     allPackages?: any[]
     package?: 'bun' | 'pnpm' | 'npm' | 'yarn' | 'none'
     deploy?: 'netlify' | 'vercel' | 'none',
-    stateManagement?: 'redux' | 'recoil' | 'zustand',
+    stateManagement?: 'redux' | 'jotai' | 'zustand' | 'none',
     useEslint?: boolean
     useEslintTs?: boolean
     useRouter?: boolean

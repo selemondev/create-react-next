@@ -13,7 +13,7 @@ async function getReactProperty() {
   const TanStackReactQuery = packageJsonMap.get('tanStackReactQuery');
   const Router = packageJsonMap.get('router');
   const Redux = packageJsonMap.get('redux');
-  const Recoil = packageJsonMap.get('recoil');
+  const Jotai = packageJsonMap.get('jotai');
   const Zustand = packageJsonMap.get('zustand');
   const Tailwind = packageJsonMap.get('tailwind');
   const TypeScript = packageJsonMap.get('typescript');
@@ -34,7 +34,7 @@ async function getReactProperty() {
 
   options.Router = Router
 
-  options.Recoil = Recoil
+  options.Jotai = Jotai
 
   options.Zustand = Zustand
 

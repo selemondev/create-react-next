@@ -13,8 +13,8 @@ export default {
             value: 'zustand'
         },
         {
-            title: 'Recoil',
-            value: 'recoil'
+            title: 'Jotai',
+            value: 'jotai'
         }
     ]
 }
