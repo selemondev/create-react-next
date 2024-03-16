@@ -1,8 +1,22 @@
+<% if (stateManagement === 'jotai' ) { -%>
+import { useAtom } from 'jotai'
+import { atomWithImmer } from 'jotai-immer'
+<% } -%>
+
+<% if (stateManagement === 'jotai' ) { -%>
+const countAtom = atom(0)
+<% } -%>
+
 const TheWelcome = () => {
-    return (
-        <>
-        <p>Hello world</p>
-        </>
+<% if (stateManagement === 'jotai' ) { -%>
+const [count] = useAtom(countAtom);
+const [, setCount] = useAtom(countAtom)
+const increment = () => setCount((c) => (c = c + 1))
+<% } -%>
+return (
+    <>
+    <p>Hello world</p>
+    </>
     )
 }
 

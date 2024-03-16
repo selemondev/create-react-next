@@ -45,7 +45,7 @@ export function getFilterFile() {
       fs.remove(`${options.dest}/src/components/__tests__`);
     }
 
-    if (!!options.stateManagement) {
+    if (options.stateManagement === 'none') {
       fs.remove(`${options.dest}/src/store`)
       fs.remove(`${options.dest}/src/app`)
       fs.remove(`${options.dest}/src/features`)
@@ -60,12 +60,12 @@ export function getFilterFile() {
 
     if (options.stateManagement === 'zustand') {
       fs.remove(`${options.dest}/src/app`)
-      fs.remove(`${options.dest}/src/store/appStore`)
+      fs.remove(`${options.dest}/src/store/appStore.ts`)
       fs.remove(`${options.dest}/src/features`)
     }
 
     if (options.stateManagement === 'redux') {
-      fs.remove(`${options.dest}/src/store/store`)
+      fs.remove(`${options.dest}/src/store/store.ts`)
     }
 
     if (!options.useEslint) {
