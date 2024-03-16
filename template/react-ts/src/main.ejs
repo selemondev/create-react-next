@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
 <% if (stateManagement==='redux' ) { -%>
 import { store } from './app/store'
 import { Provider } from 'react-redux'
 <% } -%>
 
-<% if (stateManagement === 'none') { %>
+<% if (stateManagement !== 'redux' || stateManagement !== 'none') { %>
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <App />
