@@ -1,0 +1,56 @@
+{
+  "name": "react-ts",
+  "private": true,
+  "version": "0.0.0",
+  <% if (package === 'pnpm') { -%>
+    "packageManager": "pnpm@8.15.4",
+  <% } -%>
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    <%- constantProDeps %>
+    <% if (useRouter) { -%>
+    <%- Router %>
+    <% } -%>
+    <% if (useHooks) { -%>
+    <%- useHooks %>
+    <% } -%>
+    <% if (stateManagement === 'redux') { -%>
+    <%- Redux %>
+    <% } -%>
+    <% if (stateManagement === 'jotai') { -%>
+    <%- Jotai %>
+    <% } -%>
+    <% if (stateManagement === 'zustand') { -%>
+    <%- Zustand %>
+    <% } -%>
+    <% if (useTanStackReactQuery) { -%>
+    <%- TanStackReactQuery %>
+    <% } -%>
+  },
+  "devDependencies": {
+    <%- constantDevDeps %>
+    <% if (useTypeScript) { -%>
+      <%- TypeScript %>
+    <% } -%>
+    <% if (useEslint) { -%>
+      <%- Eslint %>
+    <% } -%>
+    <% if (useTailwind) { -%>
+      <%- Tailwind %>
+    <% } -%>
+    <% if (useJavaScript) { -%>
+      <%- JavaScript %>
+    <% } -%>
+    <% if (useVitest) { -%>
+      <%- Vitest %>
+    <% } -%>
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}

@@ -7,28 +7,21 @@ import { store } from './app/store'
 import { Provider } from 'react-redux'
 <% } -%>
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-      <App />
-   </React.StrictMode>,
-)
-
-<% if (stateManagement === 'none') { -%>
-  ReactDOM.createRoot(document.getElementById('root')!).render(
+<% if (stateManagement === 'none') { %>
+  ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-      <Provider store={store}>
         <App />
-      </Provider>
-    </React.StrictMode>,
-  )
-<% } -%>
+    </React.StrictMode>
+  );
+<% } %>
+
 
 <% if (stateManagement==='redux' ) { -%>
-    ReactDOM.createRoot(document.getElementById('root')!).render(
+    ReactDOM.createRoot(document.getElementById('root')).render(
       <React.StrictMode>
         <Provider store={store}>
           <App />
         </Provider>
-      </React.StrictMode>,
+      </React.StrictMode>
     )
  <% } -%>
