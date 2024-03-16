@@ -46,7 +46,26 @@ export function getFilterFile() {
     }
 
     if (!!options.stateManagement) {
-      fs.remove(`${options.dest}/src/stores`)
+      fs.remove(`${options.dest}/src/store`)
+      fs.remove(`${options.dest}/src/app`)
+      fs.remove(`${options.dest}/src/features`)
+    }
+
+    if (options.stateManagement === 'jotai') {
+      fs.remove(`${options.dest}/src/app`)
+      fs.remove(`${options.dest}/src/store`)
+      fs.remove(`${options.dest}/src/features`)
+    }
+
+
+    if (options.stateManagement === 'zustand') {
+      fs.remove(`${options.dest}/src/app`)
+      fs.remove(`${options.dest}/src/store/appStore`)
+      fs.remove(`${options.dest}/src/features`)
+    }
+
+    if (options.stateManagement === 'redux') {
+      fs.remove(`${options.dest}/src/store/store`)
     }
 
     if (!options.useEslint) {
