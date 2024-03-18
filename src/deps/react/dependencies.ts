@@ -68,11 +68,12 @@ const typescript = {
     name: [
         'typescript',
         '@types/react',
-        '@types/react-dom'
+        '@types/react-dom',
+        '@types/node'
     ],
-    version: ['^5.2.2', '^18.2.64', "^18.2.21"],
-    stableVersion: ['^5.2.2', '^18.2.64', "^18.2.21"],
-    dev: ['dev', 'dev', 'dev']
+    version: ['^5.2.2', '^18.2.64', "^18.2.21", '^20.11.28'],
+    stableVersion: ['^5.2.2', '^18.2.64', "^18.2.21", '^20.11.28'],
+    dev: ['dev', 'dev', 'dev', 'dev']
 }
 
 const javascript = {
@@ -93,10 +94,10 @@ const tanStackReactQuery = {
 }
 
 const vitest = {
-    name: ['vitest', 'jsdom', "@testing-library/react"],
-    version: ["^1.2.2", "^24.0.0", "^14.2.1"],
-    stableVersion: ["^1.2.2", "^24.0.0", "^14.2.1"],
-    dev: ['dev', 'dev', 'dev']
+    name: ['vitest', 'jsdom', "@testing-library/react", '@testing-library/jest-dom'],
+    version: ["^1.2.2", "^24.0.0", "^14.2.1", "^6.4.2"],
+    stableVersion: ["^1.2.2", "^24.0.0", "^14.2.1", "^6.4.2"],
+    dev: ['dev', 'dev', 'dev', 'dev']
 }
 
 const constantDevDeps = {
