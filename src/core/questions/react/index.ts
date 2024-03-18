@@ -18,7 +18,7 @@ async function getReactProperty() {
   const Tailwind = packageJsonMap.get('tailwind');
   const TypeScript = packageJsonMap.get('typescript');
   const JavaScript = packageJsonMap.get('javascript');
-  const UseHooks = packageJsonMap.get('useHooks');
+  const UseHooks = packageJsonMap.get('reactHooks');
 
   resolveOptions(options, packageJsonMap)
 
