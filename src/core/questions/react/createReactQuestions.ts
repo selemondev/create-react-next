@@ -23,8 +23,8 @@ async function createReactQuestions(): Promise<void> {
       await createQuestion(tailwindPrompt)
     }
     await createQuestion(stateManagement)
-    await createQuestion(reactQuery)
     await runPrompt();
+    await createQuestion(reactQuery)
 
     if (!options.useEslint) {
       await createQuestion(eslintPrompt)

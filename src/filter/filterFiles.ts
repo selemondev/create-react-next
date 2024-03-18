@@ -4,7 +4,7 @@ import fs from 'fs-extra';
 export function getFilterFile() {
   async function reactFilterFileActions() {
     if (!options.useRouter) {
-      fs.remove(`${options.dest}/src/router`)
+      fs.remove(`${options.dest}/src/pages`)
     }
 
     if (!options.useTailwind) {
