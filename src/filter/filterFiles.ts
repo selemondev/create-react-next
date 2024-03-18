@@ -60,11 +60,13 @@ export function getFilterFile() {
     if (options.stateManagement === 'zustand') {
       fs.remove(`${options.dest}/src/app`)
       fs.remove(`${options.dest}/src/store/appStore.ts`)
+      fs.remove(`${options.dest}/src/store/appStore.js`)
       fs.remove(`${options.dest}/src/features`)
     }
 
     if (options.stateManagement === 'redux') {
       fs.remove(`${options.dest}/src/store/store.ts`)
+      fs.remove(`${options.dest}/src/store/store.js`)
     }
 
     if (!options.useEslint) {

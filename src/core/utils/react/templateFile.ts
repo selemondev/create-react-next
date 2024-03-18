@@ -8,8 +8,7 @@ export function reactFetchTemplateFiles(): string[] | any[] {
         options.useTypeScript ? 'src/main.tsx' : 'src/main.jsx',
         options.useTypeScript ? 'src/App.tsx' : 'src/App.jsx',
         options.useTypeScript ? 'src/components/TheWelcome.tsx' : 'src/components/TheWelcome.jsx',
-        options.useTypeScript ? 'vitest.config.ts' : 'vitest.config.js',
-        'tsconfig.json'
+        options.useTypeScript ? 'vitest.config.ts' : 'vitest.config.js'
     ]
     return files.filter(Boolean)
 }
