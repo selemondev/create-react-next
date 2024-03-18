@@ -1,0 +1,33 @@
+<% if (stateManagement === 'jotai' ) { -%>
+import { useAtom } from 'jotai'
+import { atomWithImmer } from 'jotai-immer'
+<% } -%>
+
+<% if (stateManagement === 'jotai' ) { -%>
+const countAtom = atom(0)
+<% } -%>
+
+<% if (useTanStackReactQuery) { -%>
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+<% } -%>
+
+const TheWelcome = () => {
+<% if (stateManagement === 'jotai' ) { -%>
+const [count] = useAtom(countAtom);
+const [, setCount] = useAtom(countAtom)
+const increment = () => setCount((c) => (c = c + 1))
+<% } -%>
+return (
+
+<>
+  <p>Hello world</p>
+</>
+)
+}
+
+export default TheWelcome;
