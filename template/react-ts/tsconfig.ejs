@@ -20,10 +20,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  <% if (useTypeScript) { -%>
+  <% if (useVitest) { -%>
     "include": ["src", "./tests"],
  <% } -%>
-   <% if (useJavaScript) { -%>
+   <% if (useTypeScript) { -%>
     "include": ["src"],
  <% } -%>
   "references": [{ "path": "./tsconfig.node.json" }]
