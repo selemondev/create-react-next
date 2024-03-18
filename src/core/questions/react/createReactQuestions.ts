@@ -10,36 +10,41 @@ import tailwindPrompt from "./tailwind";
 import typeScriptPrompt from "./typescript";
 import eslintPrompt from "./eslint"
 import stateManagement from './stateManagement'
+import reactQuery from './reactQuery'
 async function createReactQuestions(): Promise<void> {
   try {
-    if(!options.name) {
+    if (!options.name) {
       await createQuestion(projectName)
     }
-    if(!options.useTypeScript) {
+    if (!options.useTypeScript) {
       await createQuestion(typeScriptPrompt)
     }
-    if(!options.useTailwind) {
+    if (!options.useTailwind) {
       await createQuestion(tailwindPrompt)
     }
     await createQuestion(stateManagement)
+    await createQuestion(reactQuery)
     await runPrompt();
-    if(!options.useEslint) {
+
+    if (!options.useEslint) {
       await createQuestion(eslintPrompt)
     }
-    if(!options.package) {
+
+    if (!options.package) {
       await createQuestion(packageManager)
     }
+
     await createQuestion(deploy);
 
     await createQuestion(initializeGit);
 
   } catch (error) {
 
-    if(error instanceof Error) {
+    if (error instanceof Error) {
 
-        logger.error(error.message);
+      logger.error(error.message);
 
-        process.exit(1);
+      process.exit(1);
 
     }
   }

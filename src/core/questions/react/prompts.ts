@@ -18,15 +18,6 @@ const prompt = [
     },
 
     {
-        name: 'useTanStackReactQuery',
-        type: () => 'toggle',
-        message: 'Add TanStack React Query for server state management?',
-        initial: false,
-        active: 'Yes',
-        inactive: 'No'
-    },
-
-    {
         name: 'useVitest',
         type: () => 'toggle',
         message: 'Add Vitest for unit testing?',
