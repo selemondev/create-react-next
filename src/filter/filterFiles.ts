@@ -41,8 +41,7 @@ export function getFilterFile() {
     if (!options.useVitest) {
       fs.remove(`${options.dest}/vitest.config.ts`);
       fs.remove(`${options.dest}/vitest.config.js`);
-      fs.remove(`${options.dest}/tsconfig.vitest.json`);
-      fs.remove(`${options.dest}/src/components/__tests__`);
+      fs.remove(`${options.dest}/tests`);
     }
 
     if (options.stateManagement === 'none') {

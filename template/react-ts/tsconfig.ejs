@@ -20,6 +20,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  <% if (useTypeScript) { -%>
+    "include": ["src", "./tests"],
+ <% } -%>
+   <% if (useJavaScript) { -%>
+    "include": ["src"],
+ <% } -%>
   "references": [{ "path": "./tsconfig.node.json" }]
 }
