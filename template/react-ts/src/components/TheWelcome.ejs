@@ -8,16 +8,7 @@ import "../assets/css/base.css";
 <% } -%>
 
 <% if (stateManagement === 'jotai' ) { -%>
-const countAtom = atom(0)
-<% } -%>
-
-<% if (useTanStackReactQuery) { -%>
-import {
-  QueryClient,
-  QueryClientProvider,
-  useQuery,
-} from '@tanstack/react-query'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+const countAtom = atomWithImmer(0)
 <% } -%>
 
 const TheWelcome = () => {
