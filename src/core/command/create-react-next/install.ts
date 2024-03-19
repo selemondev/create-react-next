@@ -54,34 +54,30 @@ async function installDeps() {
         ? `${options.package} run dev to start the dev server`
         : `${options.package} dev to start the dev server`,
     )
-    
-    console.log();
 
-    logger.info(options.useEslint && options.package === 'npm'
-      ? `${options.package} run lint`
-      : `${options.package} lint`)
+    options.useEslint && console.log();
 
-    console.log()
-
-    logger.info(options.useVitest && options.package === 'npm'
-      ? `${options.package} run test:unit`
-      : `${options.package} test:unit`);
-
-
-  } else {
-    logger.info(`npm install`)
-
-    console.log()
-
-    options.useEslint && logger.info('npm run lint')
-
-    options.useEslint && console.log()
-
-    options.useVitest && logger.info('npm run test:unit')
+    options.useEslint && logger.info(`${options.package} run lint to lint your code.`)
 
     options.useVitest && console.log()
 
-    logger.info('npm run dev')
+    options.useVitest && logger.info(`${options.package} run test:unit for unit tests.`);
+
+
+  } else {
+    logger.info(`npm install - To install dependencies`)
+
+    console.log()
+
+    options.useEslint && logger.info('npm run lint to lint your code.')
+
+    options.useEslint && console.log()
+
+    logger.info('npm run dev to start the dev server')
+
+    options.useVitest && console.log()
+
+    options.useVitest && logger.info('npm run test:unit for unit tests.')
   }
 }
 export default installDeps
