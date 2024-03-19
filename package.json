@@ -2,16 +2,28 @@
   "name": "create-react-next",
   "version": "0.0.0",
   "description": "The Next Generation React Scaffolding Tool ✨",
-  "main": "index.js",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "esno src/index.ts",
-    "build:package": "tsup-node src/index.ts --format esm --clean --minify",
+    "build:package": "tsup-node src/index.ts --format cjs,esm --clean --dts --minify --shims",
     "generate:release": "npx changelogen@latest --release"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "bin": {
     "create-react-next": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "create-react-next",
     "React 18 CLI",
@@ -38,6 +50,7 @@
     "prompts": "^2.4.2",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
     "validate-npm-package-name": "^5.0.0"
   },
   "dependencies": {

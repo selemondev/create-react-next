@@ -1,4 +1,4 @@
-interface Options {
+export interface Options {
     templatePath?: string
     Router?: string
     Tailwind?: string
@@ -35,5 +35,5 @@ interface Options {
     constantProDeps?: string
   }
   
-  const options: Options = {}
-  export default options
+const options: Options = {}
+export default options

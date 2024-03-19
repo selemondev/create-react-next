@@ -21,9 +21,8 @@ return (
 
 <>
 <% if (useTailwind) { -%>
-      <main className="grid w-full min-h-screen place-items-center">
+    <main className="grid w-full min-h-screen place-items-center">
         <div className="flex flex-col items-center space-y-28">
-
           <div>
             <h1 className="text-4xl">Welcome To Create React Next</h1>
           </div>
@@ -36,33 +35,29 @@ return (
             />
           </div>
 
-          <div className="grid grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center">
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://react.dev/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  Documentation
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
+                <h2 className="text-xl">Documentation</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
                   Find in-depth information about ReactJs hooks.
                 </p>
               </a>
             </div>
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://reactrouter.com/en/main"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  React Router v6
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
+                <h2 className="text-xl">React Router v6</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
                   Find in-depth information about React Router's implementation
                 </p>
               </a>
@@ -70,15 +65,13 @@ return (
 
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://redux-toolkit.js.org/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  Redux ToolKit
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
+                <h2 className="text-xl">Redux ToolKit</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
                   Explore React's powerful state management library.
                 </p>
               </a>
@@ -86,75 +79,69 @@ return (
 
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://www.typescriptlang.org/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  TypeScript
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
-                  Explore TypeScript's robust type safety for codebase reliability.
+                <h2 className="text-xl">TypeScript</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
+                  Explore TypeScript's robust type safety for codebase
+                  reliability.
                 </p>
               </a>
             </div>
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://eslint.org/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  Eslint
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
-                  Explore Eslint's static code analysis for JavaScript and TypeScript.
+                <h2 className="text-xl">Eslint</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
+                  Explore Eslint's static code analysis for JavaScript and
+                  TypeScript.
                 </p>
               </a>
             </div>
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://tailwindcss.com/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  TailwindCss
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
-                  Explore the utility first CSS framework for building sites rapidly.
+                <h2 className="text-xl">TailwindCss</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
+                  Explore the utility first CSS framework for building sites
+                  rapidly.
                 </p>
               </a>
             </div>
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://tanstack.com/query/latest/docs/framework/react/overview"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  React Query
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
-                  Explore React Query for streamlined data fetching in React apps.
+                <h2 className="text-xl">React Query</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
+                  Explore React Query for streamlined data fetching in React
+                  apps.
                 </p>
               </a>
             </div>
             <div>
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className="flex flex-col space-y-1"
+                href="https://usehooks.com/"
+                className="flex flex-col items-center space-y-1 md:items-start"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 className="text-xl">
-                  React useHooks
-                </h2>
-                <p className='m-0 max-w-[30ch] text-sm opacity-50'>
+                <h2 className="text-xl">React useHooks</h2>
+                <p className="m-0 max-w-[30ch] text-center md:text-start text-sm opacity-50">
                   Explore a collection of modern, server safe React hooks.
                 </p>
               </a>
@@ -164,27 +151,25 @@ return (
       </main>
 <% } -%>
 <% if (!useTailwind) { -%>
-      <main className='main-container'>
-        <div className='main'>
+      <main className="main-container">
+        <div className="main">
           <div>
-            <h1 className='main-title'>
-              Welcome To Create React Next
-            </h1>
+            <h1 className="main-title">Welcome To Create React Next</h1>
           </div>
 
-          <div className='center'>
+          <div className="center">
             <img
-              className='logo'
+              className="logo"
               src="https://api.iconify.design/vscode-icons:file-type-reactts.svg"
               alt="React Logo"
             />
           </div>
 
-          <div className='grid'>
-            <div className='card'>
+          <div className="grid">
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://react.dev/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -192,10 +177,10 @@ return (
                 <p>Find in-depth information about ReactJs hooks.</p>
               </a>
             </div>
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://reactrouter.com/en/main"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -206,10 +191,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://redux-toolkit.js.org/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -218,10 +203,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://www.typescriptlang.org/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -233,10 +218,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://eslint.org/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -248,10 +233,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://tailwindcss.com/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -263,10 +248,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://tanstack.com/query/latest/docs/framework/react/overview"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -278,10 +263,10 @@ return (
               </a>
             </div>
 
-            <div className='card'>
+            <div className="card">
               <a
-                href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                className='link'
+                href="https://usehooks.com/"
+                className="link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
