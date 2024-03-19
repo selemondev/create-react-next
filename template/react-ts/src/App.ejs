@@ -1,10 +1,10 @@
 <% if (useRouter) { -%>
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<% } -%>
-import TheWelcome from "./components/TheWelcome"
-<% if (useRouter) { -%>
 import Home from "./pages/Home";
 import About from "./pages/About";
+ <% } -%>
+ <% if (!useRouter) { -%>
+import TheWelcome from "./components/TheWelcome"
  <% } -%>
 function App() {
 return (
@@ -18,8 +18,8 @@ return (
     </Router>
  <% } -%>
  <% if (!useRouter) { -%>
-  <TheWelcome />
-<% } -%>
+ <TheWelcome />
+ <% } -%>
 </>
 )
 }
