@@ -229,10 +229,15 @@ gap: 112px;
     padding: 4rem;
   }
 
+  .main-title {
+    font-size: 30px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    place-items: center;
     margin-bottom: 120px;
-    max-width: 320px;
+    width: 100%;
     text-align: center;
   }
 
@@ -300,9 +305,19 @@ gap: 112px;
   }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+
+@media (min-width: 701px) and (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(3, 30%);
+    width: 45rem;
+    place-content: center;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(3, 33%);
+    width: 60rem;
+    place-content: center;
   }
 }
