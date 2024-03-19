@@ -5,6 +5,9 @@ import App from './App.tsx'
 import { store } from "./store/appStore.ts";
 import { Provider } from 'react-redux'
 <% } -%>
+<% if (useTailwind) { -%>
+import './assets/css/tailwind.css'
+<% } -%>
 
 <% if (stateManagement !== 'redux' || stateManagement === 'none') { %>
   ReactDOM.createRoot(document.getElementById('root')).render(

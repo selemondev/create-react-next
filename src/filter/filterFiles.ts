@@ -10,6 +10,7 @@ export function getFilterFile() {
     if (!options.useTailwind) {
       fs.remove(`${options.dest}/tailwind.config.js`);
       fs.remove(`${options.dest}/postcss.config.js`);
+      fs.remove(`${options.dest}/src/assets/css/tailwind.css`);
     };
 
     if (options.useTailwind) {

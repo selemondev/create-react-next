@@ -1,4 +1,7 @@
+import TheWelcome from "../components/TheWelcome"
 const Home = () => {
-  return <div>Home page</div>;
+    return <>
+        <TheWelcome />
+    </>;
 }
 export default Home;
