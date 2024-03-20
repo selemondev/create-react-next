@@ -11,7 +11,7 @@
     "build:package": "tsup-node src/index.ts --format cjs,esm --clean --dts --minify --shims",
     "generate:release": "npx changelogen@latest --release",
     "publish:beta": "pnpm run build && npm publish --tag beta",
-		"publish": "pnpm run build && npm publish --access=public"
+		"publish": "pnpm run build:package && npm publish --access=public"
   },
   "exports": {
     ".": {
