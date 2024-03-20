@@ -57,11 +57,11 @@ async function installDeps() {
 
     options.useEslint && console.log();
 
-    options.useEslint && logger.info(`${options.package} run lint to format your code.`)
+    options.useEslint && logger.info(`${options.package} run lint to format your code`)
 
     options.useVitest && console.log()
 
-    options.useVitest && logger.info(`${options.package} run test:unit for unit tests.`);
+    options.useVitest && logger.info(`${options.package} run test:unit for unit tests`);
 
 
   } else {
@@ -69,7 +69,7 @@ async function installDeps() {
 
     console.log()
 
-    options.useEslint && logger.info('npm run lint to format your code.')
+    options.useEslint && logger.info('npm run lint to format your code')
 
     options.useEslint && console.log()
 
@@ -77,7 +77,7 @@ async function installDeps() {
 
     options.useVitest && console.log()
 
-    options.useVitest && logger.info('npm run test:unit for unit tests.')
+    options.useVitest && logger.info('npm run test:unit for unit tests')
   }
 }
 export default installDeps
