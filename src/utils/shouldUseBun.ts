@@ -11,8 +11,8 @@ export const shouldUseBun = (): boolean => {
         execSync('bun --version', { stdio: 'ignore' });
 
         return true;
-    } catch(err){
-        if(err instanceof Error) {
+    } catch (err) {
+        if (err instanceof Error) {
             logger.error(err.message);
         };
 
