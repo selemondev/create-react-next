@@ -1,4 +1,5 @@
 import * as dependencies from '../../../deps/react/dependencies'
+import options from './options'
 interface Dependency {
   name: string | string[],
   version: string | string[]
@@ -28,7 +29,7 @@ Object.keys(deps).forEach((item: string) => {
 const lintMap = new Map([
   [
     'EslintScript',
-    '"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",'
+    '"lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",'
   ],
 
   [

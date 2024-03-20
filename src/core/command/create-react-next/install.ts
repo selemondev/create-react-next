@@ -57,7 +57,7 @@ async function installDeps() {
 
     options.useEslint && console.log();
 
-    options.useEslint && logger.info(`${options.package} run lint to lint your code.`)
+    options.useEslint && logger.info(`${options.package} run lint to format your code.`)
 
     options.useVitest && console.log()
 
@@ -69,7 +69,7 @@ async function installDeps() {
 
     console.log()
 
-    options.useEslint && logger.info('npm run lint to lint your code.')
+    options.useEslint && logger.info('npm run lint to format your code.')
 
     options.useEslint && console.log()
 
