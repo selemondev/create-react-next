@@ -61,7 +61,7 @@ async function installDeps() {
 
     options.useVitest && console.log()
 
-    options.useVitest && logger.info(`${options.package} run test:unit for unit tests`);
+    options.useVitest && logger.info(`${options.package} run test:unit to run tests`);
 
 
   } else {
@@ -77,7 +77,7 @@ async function installDeps() {
 
     options.useVitest && console.log()
 
-    options.useVitest && logger.info('npm run test:unit for unit tests')
+    options.useVitest && logger.info('npm run test:unit to run tests')
   }
 }
 export default installDeps
