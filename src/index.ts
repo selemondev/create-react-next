@@ -7,7 +7,7 @@ import options from './core/utils/react/options';
 
 async function main() {
       program
-            .arguments('<project-name>')
+            .argument('<project-name>', 'The name of the project')
             .version(packageJson.version)
             .description(`Create React Next. The Next Generation React Scaffolding Tool ⚡`)
             .action((name: string) => {
@@ -24,7 +24,7 @@ async function main() {
                   '--tailwind',
                   `
       
-      Initialize with Tailwind CSS config. (default)
+      Initialize with Tailwind CSS.
     `
             )
             .option(
