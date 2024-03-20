@@ -1,6 +1,6 @@
 {
   "name": "create-react-next",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -10,7 +10,7 @@
     "dev": "esno src/index.ts",
     "build:package": "tsup-node src/index.ts --format cjs,esm --clean --dts --minify --shims",
     "generate:release": "npx changelogen@latest --release",
-    "publish:beta": "pnpm run build && npm publish --tag beta",
+    "publish:beta": "npm run build && npm publish --tag beta",
 		"publish": "npm publish --access=public"
   },
   "exports": {
