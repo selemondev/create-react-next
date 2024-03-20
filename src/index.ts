@@ -7,7 +7,6 @@ import options from './core/utils/react/options';
 
 async function main() {
       program
-            .argument('<project-name>', 'The name of the project')
             .version(packageJson.version)
             .description(`Create React Next. The Next Generation React Scaffolding Tool ⚡`)
             .action((name: string) => {
