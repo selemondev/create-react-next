@@ -3,7 +3,7 @@ const prompt = [
         name: 'useRouter',
         type: () => 'toggle',
         message: 'Add React Router DOM for Single Page Application development?',
-        initial: false,
+        initial: true,
         active: 'Yes',
         inactive: 'No'
     },
@@ -21,7 +21,7 @@ const prompt = [
         name: 'useVitest',
         type: () => 'toggle',
         message: 'Add Vitest for unit testing?',
-        initial: false,
+        initial: true,
         active: 'Yes',
         inactive: 'No'
     }
