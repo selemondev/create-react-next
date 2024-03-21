@@ -78,3 +78,12 @@ Options:
   -h, --help                           output usage information
 ```
 
+### How to contribute?
+
+Contributions are welcome and encouraged! If you have any ideas or suggestions for new features, or if you encounter any bugs or issues, please open an issue or submit a pull request on the GitHub repository. 
+
+Developers interested in contributing should read the [Code of Conduct](./CODE_OF_CONDUCT.md) and the [Contributing Guide](./CONTRIBUTING.md).
+
+
+Happy hacking ⚡
+
