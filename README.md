@@ -43,7 +43,7 @@ pnpm create react-next@latest <project-name> --ts --eslint --tailwind --use-pnpm
 You can also pass command line arguments to set up a new project non-interactively. Run `create-react-next --help` to see the available command line arguments:
 
 ```bash
-Usage: create-next-app <project-directory> [options]
+Usage: create-react-next <project-name> [options]
 
 Options:
   -V, --version   output the version number
@@ -74,8 +74,6 @@ Options:
   --use-bun
 
     Explicitly tell the CLI to bootstrap the app using Bun
-
-  -h, --help                           output usage information
 ```
 
 ### How to contribute?
