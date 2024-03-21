@@ -1,3 +1,80 @@
-# Create React Next CLI ⚡
+<p align="center">
+ <img align="center" src="https://raw.githubusercontent.com/selemondev/create-react-next/master/image/create-react-next.png" height="96" />
+</p>
 
-- The Next Generation React Scaffolding Tool ⚡.
+## Create React Next ⚡
+
+The Next Generation React Scaffolding Tool 🛠️
+
+## Usage 
+
+### npx
+
+```bash
+npx create-react-next@latest
+
+# OR
+
+npx create-react-next <project-name> --ts --eslint --tailwind --use-pnpm
+```
+
+### yarn
+
+```bash
+yarn create react-next
+
+# OR
+
+yarn create react-next <project-name> --ts --eslint --tailwind --use-pnpm
+```
+
+### pnpm
+
+```bash
+pnpm create react-next@latest
+
+# OR
+
+pnpm create react-next@latest <project-name> --ts --eslint --tailwind --use-pnpm
+```
+
+## Options
+
+You can also pass command line arguments to set up a new project non-interactively. Run `create-react-next --help` to see the available command line arguments:
+
+```bash
+Usage: create-next-app <project-directory> [options]
+
+Options:
+  -V, --version   output the version number
+  --ts, --typescript
+
+    Initialize as a TypeScript project.
+
+  --tailwind
+
+    Initialize with Tailwind CSS config.
+
+  --eslint
+
+    Initialize with ESLint config.
+
+  --use-npm
+
+    Explicitly tell the CLI to bootstrap the app using npm
+
+  --use-pnpm
+
+    Explicitly tell the CLI to bootstrap the app using pnpm
+
+  --use-yarn
+
+    Explicitly tell the CLI to bootstrap the app using Yarn
+
+  --use-bun
+
+    Explicitly tell the CLI to bootstrap the app using Bun
+
+  -h, --help                           output usage information
+```
+
