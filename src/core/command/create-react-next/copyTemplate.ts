@@ -33,7 +33,7 @@ async function copyTemplate() {
     const filterFileFn = getFilterFile()
 
     async function copy() {
-        const targetDirectory = path.resolve(__dirname, '../../../../');
+        const targetDirectory = path.resolve(__dirname, '../');
         if(!dest) {
             return;
         };
