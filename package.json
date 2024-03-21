@@ -1,6 +1,6 @@
 {
   "name": "create-selemondev",
-  "version": "0.2.2",
+  "version": "0.2.5",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -24,7 +24,9 @@
     "create-react-next": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "template"
   ],
   "keywords": [
     "create-react-next",
