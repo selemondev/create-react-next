@@ -1,6 +1,6 @@
 {
   "name": "create-selemondev",
-  "version": "0.2.5",
+  "version": "0.3.4",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -11,7 +11,7 @@
     "build:package": "tsup-node src/index.ts --format cjs,esm --clean --dts --minify --shims",
     "generate:release": "npx changelogen@latest --release",
     "package:beta": "npm run build && npm publish --tag beta",
-    "package": "npm publish --access=public"
+    "package": "pnpm build:package && npm publish --access=public"
   },
   "exports": {
     ".": {
