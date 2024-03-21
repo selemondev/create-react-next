@@ -5,7 +5,7 @@ const defaultProjectName = 'create-react-next'
 
 const packageName = [
     {
-        name: 'projectName',
+        name: 'name',
         type: 'text',
         message: 'What should we call your project?',
         initial: defaultProjectName,

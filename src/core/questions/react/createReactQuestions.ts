@@ -14,7 +14,7 @@ import reactQuery from './reactQuery'
 import program from '../../program'
 async function createReactQuestions(): Promise<void> {
   try {
-    options.name = program.args[0] ?? (await createQuestion(projectName));
+    options.name = program.args[0] ?? (await createQuestion(projectName)).name;
     
     if (!options.useTypeScript) {
       await createQuestion(typeScriptPrompt)
