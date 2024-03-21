@@ -11,11 +11,11 @@ import typeScriptPrompt from "./typescript";
 import eslintPrompt from "./eslint"
 import stateManagement from './stateManagement'
 import reactQuery from './reactQuery'
+import program from '../../program'
 async function createReactQuestions(): Promise<void> {
   try {
-    if (!options.name) {
-      await createQuestion(projectName)
-    }
+    options.name = program.args[0] ?? (await createQuestion(projectName));
+    
     if (!options.useTypeScript) {
       await createQuestion(typeScriptPrompt)
     }
