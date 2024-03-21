@@ -1,6 +1,6 @@
 {
-  "name": "create-selemondev",
-  "version": "0.3.8",
+  "name": "create-react-next",
+  "version": "0.0.0",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
   "main": "./dist/index.cjs",
