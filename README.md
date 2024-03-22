@@ -1,10 +1,10 @@
 <p align="center">
- <img align="center" src="https://raw.githubusercontent.com/selemondev/create-react-next/master/image/create-react-next.png" height="96" />
+ <img align="center" src="https://raw.githubusercontent.com/selemondev/create-react-next/master/image/create-react-next.png" height="400" />
 </p>
 
 ## Create React Next ⚡
 
-The Next Generation React Scaffolding Tool 🛠️
+The Next Generation React Scaffolding Tool powered by Vite 🛠️
 
 ## Usage 
 
