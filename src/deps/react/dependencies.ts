@@ -100,12 +100,27 @@ const vitest = {
     dev: ['dev', 'dev', 'dev', 'dev']
 }
 
+const vercelCLI = {
+    name: ['vercel'],
+    version: ["^34.1.7"],
+    stableVersion: ["^34.1.7"],
+    dev: ['dev']
+}
+
+const netlifyCLI = {
+    name: ['netlify-cli'],
+    version: ["^17.30.0"],
+    stableVersion: ["^17.30.0"],
+    dev: ['dev']
+}
+
 const constantDevDeps = {
     name: options.useTypeScript ? typescript.name : javascript.name,
     version: options.useTypeScript ? typescript.version : javascript.version,
     stableVersion: options.useTypeScript ? typescript.stableVersion : javascript.stableVersion,
     dev: options.useTypeScript ? typescript.dev : javascript.dev
 }
+
 const constantProDeps = {
     name: ['react', 'react-dom'],
     version: ['^18.2.0', '^18.2.0'],
@@ -126,5 +141,7 @@ export {
     jotai,
     reactHooks,
     redux,
-    router
+    router,
+    vercelCLI,
+    netlifyCLI
 }
