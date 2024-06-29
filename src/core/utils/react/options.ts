@@ -10,6 +10,8 @@ export interface Options {
     Zustand?: string
     Eslint?: string
     Vitest?: string
+    VercelCLI?: string
+    NetlifyCLI?: string
     TanStackReactQuery?: string
     name?: string
     version?: string
@@ -22,6 +24,8 @@ export interface Options {
     useEslint?: boolean
     useEslintTs?: boolean
     useRouter?: boolean
+    useVercelCLI?: boolean
+    useNetlifyCLI?: boolean
     useReactQuery?: boolean
     useTailwind?: boolean
     useTypeScript?: boolean

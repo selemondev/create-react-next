@@ -55,6 +55,12 @@
     <% if (useVitest) { -%>
       <%- Vitest %>
     <% } -%>
+    <% if (useVercelCLI) { -%>
+      <%- VercelCLI %>
+     <% } -%>
+    <% if (useNetlifyCLI) { -%>
+      <%- NetlifyCLI %>
+    <% } -%>
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.8"
   }

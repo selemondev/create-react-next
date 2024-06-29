@@ -12,6 +12,7 @@ import eslintPrompt from "./eslint"
 import stateManagement from './stateManagement'
 import reactQuery from './reactQuery'
 import program from '../../program'
+import { packageJsonMap } from '../../utils/react/ejsMapConstant'
 async function createReactQuestions(): Promise<void> {
   try {
     options.name = program.args[0] ?? (await createQuestion(projectName)).name;
@@ -34,7 +35,19 @@ async function createReactQuestions(): Promise<void> {
       await createQuestion(packageManager)
     }
 
-    await createQuestion(deploy);
+    const VercelCLI = packageJsonMap.get('vercelCLI');
+
+    const NetlifyCLI = packageJsonMap.get('netlifyCLI');
+
+    const deploymentCLI = await createQuestion(deploy);
+
+    options.VercelCLI = deploymentCLI?.deploy === 'vercel' && VercelCLI;
+
+    options.NetlifyCLI = deploymentCLI?.deploy === 'netlify' && NetlifyCLI;
+
+    options.useVercelCLI = !!options.VercelCLI;
+
+    options.useNetlifyCLI = !!options.NetlifyCLI;
 
     await createQuestion(initializeGit);
 
