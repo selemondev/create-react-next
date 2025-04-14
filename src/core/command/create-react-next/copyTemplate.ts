@@ -1,5 +1,5 @@
-import { copy as fsCopy, move } from 'fs-extra'
-import { resolve } from 'node:path'
+import fs from 'fs-extra'
+import path from 'node:path'
 import options from '../../../core/utils/react/options'
 import { ejsRender } from '../../../utils/ejsRender'
 import chalk from "chalk"
@@ -18,13 +18,13 @@ async function copyTemplate() {
 
     const language = options.useTypeScript ? 'react-ts' : 'react-js';
 
-    options.src = resolve(__dirname, `../template/${language}`);
+    options.src = path.resolve(__dirname, `../template/${language}`);
 
-    const dest = options.name && resolve(process.cwd(), options.name)
+    const dest = options.name && path.resolve(process.cwd(), options.name)
     
     options.dest = dest
 
-    const templatePath = resolve(
+    const templatePath = path.resolve(
         __dirname,
         `../../../../template/${language}`
     );
@@ -33,19 +33,19 @@ async function copyTemplate() {
     const filterFileFn = getFilterFile()
 
     async function copy() {
-        const targetDirectory = resolve(__dirname, '../');
+        const targetDirectory = path.resolve(__dirname, '../');
         if(!dest) {
             return;
         };
-        await fsCopy(`${targetDirectory}/template/${language}`, dest)
+        await fs.copy(`${targetDirectory}/template/${language}`, dest)
     }
     await copy();
 
     filterFileFn && await filterFileFn();
 
-    options.dest && await move(
-        resolve(options.dest, '.gitignore.ejs'),
-        resolve(options.dest, '.gitignore'),
+    options.dest && await fs.move(
+        path.resolve(options.dest, '.gitignore.ejs'),
+        path.resolve(options.dest, '.gitignore'),
         { overwrite: true }
     );
 
