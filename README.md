@@ -1,8 +1,21 @@
 <p align="center">
  <img align="center" src="https://raw.githubusercontent.com/selemondev/create-react-next/master/image/create-react-next.png" height="400" />
+ <h1 align="center">
+ Create React Next
+ </h1>
 </p>
 
-## Create React Next ⚡
+<p align="center">
+  <a href="https://www.npmjs.com/package/create-react-next">
+    <img alt="npm-version-src" src="https://img.shields.io/npm/v/create-react-next/latest.svg?style=flat&colorA=020420&colorB=00DC82" />
+  </a>
+  <a href="https://npmjs.com/package/create-react-next">
+    <img alt="npm-downloads-src" src="https://img.shields.io/npm/dm/create-react-next.svg?style=flat&colorA=020420&colorB=00DC82" />
+  </a>
+  <a href="https://pkg-size.dev/create-react-next@latest">
+  <img src="https://pkg-size.dev/badge/bundle/842194" title="Bundle size for create-react-next">
+  </a>
+</p>
 
 The Next Generation React Scaffolding Tool powered by Vite 🛠️
 

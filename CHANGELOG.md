@@ -3,15 +3,20 @@
 
 ## v1.0.1
 
-[compare changes](https://github.com/selemondev/create-react-next/compare/v1.1.0...v1.0.1)
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.0...v1.0.1)
 
 ### 🔥 Performance
 
-- Reduce bundle size ([5cb6bbe](https://github.com/selemondev/create-react-next/commit/5cb6bbe))
+- Reduce bundle size ( ~78.4% performance improvement
+in terms of bundle size reduction ) ([5cb6bbe](https://github.com/selemondev/create-react-next/commit/5cb6bbe))
+
+### 🏡 Chore
+
+- Release v1.0.1 ([8b9aac0](https://github.com/selemondev/create-react-next/commit/8b9aac0))
 
 ### ❤️ Contributors
 
-- Selemondev <selemondev19@gmail.com>
+- [Selemondev](https://github.com/selemondev)
 
 ## v1.0.0
 
@@ -77,6 +82,5 @@
 
 ### ❤️ Contributors
 
-- Selemondev ([@selemondev](http://github.com/selemondev))
-- Selemon Dev <selemon@nathandigital.com>
+- [Selemondev](http://github.com/selemondev)
 
