@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.0.3
+
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- Import names from fs-extra ([04f92c4](https://github.com/selemondev/create-react-next/commit/04f92c4))
+
+### 📖 Documentation
+
+- Update ([c17c322](https://github.com/selemondev/create-react-next/commit/c17c322))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v1.0.2
 
 [compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.1...v1.0.2)
