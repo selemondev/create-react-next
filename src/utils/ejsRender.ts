@@ -1,5 +1,5 @@
-import { render } from "ejs";
-import { readFile, outputFile, remove } from 'fs-extra'
+import ejs from "ejs";
+import fs from 'fs-extra'
 import { resolve, extname, parse } from "path";
 import { format as prettierFormatter } from "prettier/standalone"
 import parserBabel from "prettier/parser-babel";
@@ -20,9 +20,9 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
 
         const outputFilePath = resolve(dest, filePath)
 
-        const templateCode = await readFile(readFilePath)
+        const templateCode = await fs.readFile(readFilePath)
 
-        const code = render(templateCode.toString(), options);
+        const code = ejs.render(templateCode.toString(), options);
 
         const extensionName = extname(filePath).replace(/[.]/g, '')
         
@@ -62,8 +62,8 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
         } catch (err) {
             console.log(err)
         }
-        await outputFile(outputFilePath, prettierCode)
-        await remove(readFilePath)
+        await fs.outputFile(outputFilePath, prettierCode)
+        await fs.remove(readFilePath)
     } catch (error) {
         console.log(error)
     }
