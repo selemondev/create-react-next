@@ -1,22 +1,16 @@
 import ejs from "ejs";
 import fs from 'fs-extra'
 import path from "path";
-import prettier from "prettier"
+import { format as prettierFormatter } from "prettier/standalone"
+import parserBabel from "prettier/parser-babel";
+import parserEstree from "prettier/plugins/estree";
 import options from '../core/utils/react/options'
-import { fileURLToPath } from "node:url";
-import { dirname } from "path";
 
 // formatting the code
 
 export async function ejsRender(filePath: string, name: string): Promise<void> {
     try {
-        const __filename = fileURLToPath(import.meta.url);
-        const __dirname = dirname(__filename);
         let prettierCode: string = '';
-
-        const language = options.useTypeScript ? 'react-ts' : 'react-js';
-
-        const templatePath = path.resolve(__dirname, `../template/${language}`)
 
         const file = path.parse(filePath);
 
@@ -31,29 +25,28 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
         const code = ejs.render(templateCode.toString(), options);
 
         const extname = path.extname(filePath).replace(/[.]/g, '')
-        const opts = await prettier.resolveConfig(templatePath)
-
+        
         try {
             switch (extname) {
                 case 'ts':
                 case 'tsx':
                 case 'jsx':
                 case 'js':
-                    prettierCode = await prettier.format(code, {
+                    prettierCode = await prettierFormatter(code, {
                         parser: 'babel',
-                        ...opts
+                        plugins: [parserBabel, parserEstree]
                     });
                     break;
                 case 'json':
-                    prettierCode = await prettier.format(code, {
+                    prettierCode = await prettierFormatter(code, {
                         parser: "json",
-                        ...opts
+                        plugins: [parserBabel, parserEstree]
                     });
                     break;
                 case 'cjs':
-                    prettierCode = await prettier.format(code, {
+                    prettierCode = await prettierFormatter(code, {
                         parser: "babel",
-                        ...opts
+                        plugins: [parserBabel, parserEstree]
                     });
                     break;
                 case 'toml':
@@ -63,7 +56,7 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
                     prettierCode = code
                     break
                 default:
-                    prettierCode = await prettier.format(code, { parser: extname })
+                    prettierCode = await prettierFormatter(code, { parser: extname })
                     break
             }
         } catch (err) {
