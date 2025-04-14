@@ -65,6 +65,5 @@
 
 ### ❤️ Contributors
 
-- Selemondev ([@selemondev](http://github.com/selemondev))
-- Selemon Dev <selemon@nathandigital.com>
+- [Selemondev](http://github.com/selemondev)
 
