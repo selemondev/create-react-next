@@ -1,5 +1,21 @@
 # Changelog
 
+## v1.0.2
+
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.2...v1.0.2)
+
+### 📖 Documentation
+
+- Update ([9751d8c](https://github.com/selemondev/create-react-next/commit/9751d8c))
+
+### 🏡 Chore
+
+- Changed package name ([b2310d1](https://github.com/selemondev/create-react-next/commit/b2310d1))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.0...v1.0.1)
