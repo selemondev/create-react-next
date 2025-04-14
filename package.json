@@ -1,6 +1,6 @@
 {
   "name": "create-react-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
   "main": "./dist/index.cjs",
