@@ -1,5 +1,74 @@
 # Changelog
 
+## v1.0.2
+
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.1...v1.0.2)
+
+### 🔥 Performance
+
+- Reduce bundle size ([0345d32](https://github.com/selemondev/create-react-next/commit/0345d32))
+
+### 📖 Documentation
+
+- Update CHANGELOG.md file ([ca53b28](https://github.com/selemondev/create-react-next/commit/ca53b28))
+- Update ([9751d8c](https://github.com/selemondev/create-react-next/commit/9751d8c))
+
+### 🏡 Chore
+
+- Release v1.0.1 ([760aaed](https://github.com/selemondev/create-react-next/commit/760aaed))
+- Release v1.0.1 ([8b9aac0](https://github.com/selemondev/create-react-next/commit/8b9aac0))
+- **release:** V1.0.2 ([486f155](https://github.com/selemondev/create-react-next/commit/486f155))
+- **release:** V1.0.2 ([847fb1a](https://github.com/selemondev/create-react-next/commit/847fb1a))
+- Changed package name ([b2310d1](https://github.com/selemondev/create-react-next/commit/b2310d1))
+- **release:** V1.0.2 ([91698f3](https://github.com/selemondev/create-react-next/commit/91698f3))
+- **release:** V1.0.3 ([26c9cb5](https://github.com/selemondev/create-react-next/commit/26c9cb5))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
+## v1.0.3
+
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.1...v1.0.3)
+
+### 🔥 Performance
+
+- Reduce bundle size ([0345d32](https://github.com/selemondev/create-react-next/commit/0345d32))
+
+### 📖 Documentation
+
+- Update CHANGELOG.md file ([ca53b28](https://github.com/selemondev/create-react-next/commit/ca53b28))
+- Update ([9751d8c](https://github.com/selemondev/create-react-next/commit/9751d8c))
+
+### 🏡 Chore
+
+- Release v1.0.1 ([760aaed](https://github.com/selemondev/create-react-next/commit/760aaed))
+- Release v1.0.1 ([8b9aac0](https://github.com/selemondev/create-react-next/commit/8b9aac0))
+- **release:** V1.0.2 ([486f155](https://github.com/selemondev/create-react-next/commit/486f155))
+- **release:** V1.0.2 ([847fb1a](https://github.com/selemondev/create-react-next/commit/847fb1a))
+- Changed package name ([b2310d1](https://github.com/selemondev/create-react-next/commit/b2310d1))
+- **release:** V1.0.2 ([91698f3](https://github.com/selemondev/create-react-next/commit/91698f3))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
+## v1.0.2
+
+[compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.2...v1.0.2)
+
+### 📖 Documentation
+
+- Update ([9751d8c](https://github.com/selemondev/create-react-next/commit/9751d8c))
+
+### 🏡 Chore
+
+- Changed package name ([b2310d1](https://github.com/selemondev/create-react-next/commit/b2310d1))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/selemondev/create-react-next/compare/v1.0.0...v1.0.1)
