@@ -1,6 +1,6 @@
-import ejs from "ejs";
-import fs from 'fs-extra'
-import path from "path";
+import { render } from "ejs";
+import { readFile, outputFile, remove } from 'fs-extra'
+import { resolve, extname, parse } from "path";
 import { format as prettierFormatter } from "prettier/standalone"
 import parserBabel from "prettier/parser-babel";
 import parserEstree from "prettier/plugins/estree";
@@ -12,22 +12,22 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
     try {
         let prettierCode: string = '';
 
-        const file = path.parse(filePath);
+        const file = parse(filePath);
 
-        const dest = path.resolve(process.cwd(), name)
+        const dest = resolve(process.cwd(), name)
 
-        const readFilePath = path.resolve(dest, file.dir, `${file.name}.ejs`)
+        const readFilePath = resolve(dest, file.dir, `${file.name}.ejs`)
 
-        const outputFilePath = path.resolve(dest, filePath)
+        const outputFilePath = resolve(dest, filePath)
 
-        const templateCode = await fs.readFile(readFilePath)
+        const templateCode = await readFile(readFilePath)
 
-        const code = ejs.render(templateCode.toString(), options);
+        const code = render(templateCode.toString(), options);
 
-        const extname = path.extname(filePath).replace(/[.]/g, '')
+        const extensionName = extname(filePath).replace(/[.]/g, '')
         
         try {
-            switch (extname) {
+            switch (extensionName) {
                 case 'ts':
                 case 'tsx':
                 case 'jsx':
@@ -62,8 +62,8 @@ export async function ejsRender(filePath: string, name: string): Promise<void> {
         } catch (err) {
             console.log(err)
         }
-        await fs.outputFile(outputFilePath, prettierCode)
-        await fs.remove(readFilePath)
+        await outputFile(outputFilePath, prettierCode)
+        await remove(readFilePath)
     } catch (error) {
         console.log(error)
     }
