@@ -1,13 +1,13 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import { readdirSync, lstatSync, existsSync } from 'fs'
+import { resolve } from 'path'
 
 export function preOrderDirectoryTraverse(dir: string, dirCallback: Function, fileCallback: Function) {
-    for (const filename of fs.readdirSync(dir)) {
-        const fullpath = path.resolve(dir, filename)
-        if (fs.lstatSync(fullpath).isDirectory()) {
+    for (const filename of readdirSync(dir)) {
+        const fullpath = resolve(dir, filename)
+        if (lstatSync(fullpath).isDirectory()) {
             dirCallback(fullpath)
             // in case the dirCallback removes the directory entirely
-            if (fs.existsSync(fullpath)) {
+            if (existsSync(fullpath)) {
                 preOrderDirectoryTraverse(fullpath, dirCallback, fileCallback)
             }
             continue
@@ -17,9 +17,9 @@ export function preOrderDirectoryTraverse(dir: string, dirCallback: Function, fi
 }
 
 export function postOrderDirectoryTraverse(dir: string, dirCallback: Function, fileCallback: Function) {
-    for (const filename of fs.readdirSync(dir)) {
-        const fullpath = path.resolve(dir, filename)
-        if (fs.lstatSync(fullpath).isDirectory()) {
+    for (const filename of readdirSync(dir)) {
+        const fullpath = resolve(dir, filename)
+        if (lstatSync(fullpath).isDirectory()) {
             postOrderDirectoryTraverse(fullpath, dirCallback, fileCallback)
             dirCallback(fullpath)
             continue

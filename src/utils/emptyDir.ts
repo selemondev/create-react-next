@@ -1,16 +1,16 @@
-import * as fs from 'fs'
+import { existsSync, rmdirSync, unlinkSync } from 'fs'
 
 import { postOrderDirectoryTraverse } from './directoryTraverse'
 
 function emptyDir(dir: string) {
-    if (!fs.existsSync(dir)) {
+    if (!existsSync(dir)) {
         return
     }
 
     postOrderDirectoryTraverse(
         dir,
-        (dir: string) => fs.rmdirSync(dir),
-        (file: string) => fs.unlinkSync(file)
+        (dir: string) => rmdirSync(dir),
+        (file: string) => unlinkSync(file)
     )
 }
 export default emptyDir
