@@ -1,5 +1,5 @@
 {
-  "name": "create-react-next",
+  "name": "@selemondev/create-react-next",
   "version": "1.0.1",
   "description": "The Next Generation React Scaffolding Tool ✨",
   "type": "module",
@@ -21,7 +21,7 @@
     }
   },
   "bin": {
-    "create-react-next": "./dist/index.js"
+    "@selemondev/create-react-next": "./dist/index.js"
   },
   "files": [
     "dist",
@@ -29,7 +29,7 @@
     "template"
   ],
   "keywords": [
-    "create-react-next",
+    "@selemondev/create-react-next",
     "React 18 CLI",
     "React CLI",
     "Vite CLI",

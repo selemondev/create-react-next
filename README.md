@@ -24,31 +24,31 @@ The Next Generation React Scaffolding Tool powered by Vite 🛠️
 ### npx
 
 ```bash
-npx create-react-next@latest
+npx @selemondev/create-react-next@latest
 
 # OR
 
-npx create-react-next <project-name> --ts --eslint --tailwind --use-pnpm
+npx @selemondev/create-react-next <project-name> --ts --eslint --tailwind --use-pnpm
 ```
 
 ### yarn
 
 ```bash
-yarn create react-next
+yarn create @selemondev/create-react-next
 
 # OR
 
-yarn create react-next <project-name> --ts --eslint --tailwind --use-pnpm
+yarn create @selemondev/create-react-next <project-name> --ts --eslint --tailwind --use-pnpm
 ```
 
 ### pnpm
 
 ```bash
-pnpm create react-next@latest
+pnpm create @selemondev/create-react-next@latest
 
 # OR
 
-pnpm create react-next@latest <project-name> --ts --eslint --tailwind --use-pnpm
+pnpm create @selemondev/create-react-next@latest <project-name> --ts --eslint --tailwind --use-pnpm
 ```
 
 ## Options
@@ -56,7 +56,7 @@ pnpm create react-next@latest <project-name> --ts --eslint --tailwind --use-pnpm
 You can also pass command line arguments to set up a new project non-interactively. Run `create-react-next --help` to see the available command line arguments:
 
 ```bash
-Usage: create-react-next <project-name> [options]
+Usage: @selemondev/create-react-next@latest <project-name> [options]
 
 Options:
   -V, --version   output the version number
