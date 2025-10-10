@@ -59,7 +59,7 @@
     "ora": "^8.0.1",
     "prettier": "^3.5.3",
     "prompts": "^2.4.2",
-    "validate-npm-package-name": "^5.0.0"
+    "validate-npm-package-name": "^6.0.0"
   },
   "pnpm": {
     "overrides": {},
