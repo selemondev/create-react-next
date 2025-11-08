@@ -1,19 +1,19 @@
-import chalk from "chalk";
+import termColors from "./colors";
 
 export const logger = {
-    info: (...args: any[]) => {
-        console.log(chalk.cyan(...args))
-    },
+  info: (...args: any[]) => {
+    console.log(termColors.cyan(String(...args)));
+  },
 
-    error: (...args: any[]) => {
-        console.log(chalk.red(...args))
-    },
+  error: (...args: any[]) => {
+    console.log(termColors.red(String(...args)));
+  },
 
-    warning: (...args: any[]) => {
-        console.log(chalk.yellow(...args))
-    },
+  warning: (...args: any[]) => {
+    console.log(termColors.yellow(String(...args)));
+  },
 
-    success: (...args: any[]) => {
-        console.log(chalk.green(...args))
-    }
+  success: (...args: any[]) => {
+    console.log(termColors.green(String(...args)));
+  },
 };
