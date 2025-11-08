@@ -47,8 +47,6 @@ body:
         - Windows
         - macOS
         - Linux
-        - iOS
-        - Android
         - Other (please specify in Additional Info)
     validations:
       required: true
