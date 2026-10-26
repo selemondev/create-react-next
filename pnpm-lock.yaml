@@ -22,7 +22,7 @@ importers:
         version: 8.2.0
       prettier:
         specifier: ^3.5.3
-        version: 3.6.2
+        version: 3.9.10
       prompts:
         specifier: ^2.4.2
         version: 2.4.2
@@ -721,8 +721,8 @@ packages:
       yaml:
         optional: true
 
-  prettier@3.6.2:
-    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+  prettier@3.9.10:
+    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1113,8 +1113,8 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  ajv-formats@2.1.1(ajv@8.17.1):
-    optionalDependencies:
+  ajv-formats@2.1.1:
+    dependencies:
       ajv: 8.17.1
 
   ajv@8.17.1:
@@ -1181,7 +1181,7 @@ snapshots:
   conf@12.0.0:
     dependencies:
       ajv: 8.17.1
-      ajv-formats: 2.1.1(ajv@8.17.1)
+      ajv-formats: 2.1.1
       atomically: 2.1.0
       debounce-fn: 5.1.2
       dot-prop: 8.0.2
@@ -1439,7 +1439,7 @@ snapshots:
     optionalDependencies:
       tsx: 4.20.6
 
-  prettier@3.6.2: {}
+  prettier@3.9.10: {}
 
   prompts@2.4.2:
     dependencies:
