@@ -98,3 +98,7 @@ Developers interested in contributing should read the [Code of Conduct](./CODE_O
 
 Happy hacking ⚡
 
+
+## License
+
+[MIT](./LICENSE) © [Selemon Brahanu](https://selemon.dev)
